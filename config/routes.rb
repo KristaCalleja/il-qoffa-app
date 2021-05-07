@@ -10,4 +10,7 @@ Rails.application.routes.draw do
 
   # POST the form
   post 'tasks', to: 'tasks#create'
+
+  # DELETE
+  delete 'tasks/:id', to: 'tasks#destroy'
 end

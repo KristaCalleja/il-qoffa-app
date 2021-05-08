@@ -1,7 +1,13 @@
-<ul>
-    <% @tasks.each do |task| %>
-        <li><% task.title %></li>
-    <% end %>
-</ul>
+<div class="wrapper">
+    <div class="main">
+        <div class="card">
+            <ul>
+                <% @tasks.each do |t| %>
+                    <li><% t.title %></li>
+                <% end %>
+            </ul>
 
-<%= link_to "Zid +", 'tasks_new_path' %>
+            <%= link_to "Zid +", 'tasks_new_path' %>
+        </div>
+    </div>
+</div>

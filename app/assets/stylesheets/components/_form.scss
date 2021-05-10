@@ -1,0 +1,29 @@
+.form{
+    border: 1px gray dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    input{
+        border: 1px $carnelian solid;
+        outline: none;
+        border-radius: 11px;
+        padding: 1em 2em;
+        
+    }
+    input:last-child{
+        border: 3px $carnelian solid;
+        font-weight: 600;
+        margin-top: 20px;
+        background: $carnelian;
+        color: $cultured;
+        font-size: 14px;
+        padding: .5em;
+        &:hover{
+            background: $cultured;
+            color: $carnelian;
+        }
+    }
+
+}

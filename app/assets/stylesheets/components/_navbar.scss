@@ -1,0 +1,11 @@
+.container{
+    border: 1px gray dotted;
+    display: flex;
+    justify-content: space-between;
+    .info-btn{
+        width: 32px;
+    }
+}
+p span{
+    color: $carnelian;
+}

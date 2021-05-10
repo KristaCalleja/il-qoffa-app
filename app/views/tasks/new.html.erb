@@ -1,11 +1,12 @@
 <h1>Zid xi haga</h1>
-
-<%= form_for(@task) do |t| %>
-    <%= t.label :Haga %>
-    <%= t.text_field :title %>
-    <%= t.label :Dettalji %>
-    <%= t.text_field :details %>
-    <%= t.label :Zidha %>
-    <%= t.check_box :completed %>
-    <%= t.submit %>
-<% end %>
+<div class="form">
+    <%= form_for(@task) do |t| %>
+        <%= t.label :Haga %>
+        <%= t.text_field :title %>
+        <%= t.label :Dettalji %>
+        <%= t.text_field :details %>
+        <%= t.label :Lesta %>
+        <%= t.check_box :completed %>
+        <%= t.submit %>
+    <% end %>
+</div>

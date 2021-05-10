@@ -1,0 +1,7 @@
+<div class="container">
+    <p>Illum, <span><%= Time.now.strftime("%A")%></span>. Il-hin issa huwa <span><%= Time.now.strftime("%k : %M")%></span></p>
+    <div class="info-btn">
+        <%= link_to (image_tag('home-outline.svg')), root_path %>
+        <%= link_to (image_tag('information-circle-outline.svg')), about_path %>
+    </div>
+</div>

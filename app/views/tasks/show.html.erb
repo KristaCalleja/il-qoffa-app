@@ -1,4 +1,7 @@
-<h1>Dettalji tal-affarijiet</h1>
+<div class="flex">
+    <h1>Dettalji tal-affarijiet</h1>
+    <%= link_to (image_tag('arrow-back-circle-outline.svg')), edit_task_path %>
+</div>
 <h2><%= @task.title  %></h2>
 <h3>Kemm ghandi bzonn nixtri:</h3>
 <p><%= @task.details %></p>

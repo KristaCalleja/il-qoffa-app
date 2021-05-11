@@ -1,3 +1,6 @@
+<h1>Dettalji tal-affarijiet</h1>
 <h2><%= @task.title  %></h2>
+<h3>Kemm ghandi bzonn nixtri:</h3>
 <p><%= @task.details %></p>
-<p><%= @task.completed %></p>
+
+<%= link_to (image_tag('arrow-back-circle-outline.svg')), tasks_path %>

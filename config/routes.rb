@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   # READ ALL
   get 'tasks', to: 'tasks#index'
-  # READ ONE
-  get 'tasks/:id', to: 'tasks#show', as: :task
   # For the CREATE route, we need to do a NEW route, which needs to come before SHOW
   get 'tasks/new', to: 'tasks#new'
+  # READ ONE
+  get 'tasks/:id', to: 'tasks#show', as: :task
   # POST the form
   post 'tasks', to: 'tasks#create'
   # DELETE

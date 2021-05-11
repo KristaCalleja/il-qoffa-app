@@ -4,6 +4,7 @@ class TasksController < ApplicationController
     end
 
     def new
+        # To instantiate the form_for
         @task = Task.new
     end
 
@@ -12,6 +13,7 @@ class TasksController < ApplicationController
     end
 
     def create
+        # We need strong params to save data
         @task = Task.new(task_params)
         @task.save
 

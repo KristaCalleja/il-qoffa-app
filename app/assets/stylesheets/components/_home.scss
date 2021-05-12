@@ -1,10 +1,28 @@
 *{
     font-family: $font-family;
-    list-style: none;
 }
 img{
     width: 32px;
+    &:hover {
+        background: $yellow-crayola;
+        cursor: pointer;
+    }
 }
+
 div{
     border: 1px gray dotted;
 }
+li{
+    border: 1px gray dotted;
+    width: 100%;
+    padding: .7em 0;
+    background: white;
+    font-family: $slant-font;
+    li:hover{
+        background: $gunmetal;
+        color: $cultured;
+    }
+}
+li a{
+        font-family: $slant-font;
+    }

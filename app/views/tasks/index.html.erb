@@ -1,8 +1,16 @@
 <h1>Bhalissa fil-qoffa ghandek:</h1>
 <ul>
     <% @tasks.each do |t| %>
-        <li><%= link_to t.title, task_path(t) %> , <%= t.completed %>  </li>
+        <li>
+            <%= link_to t.title, task_path(t) %> ,
+            <%= t.completed %>
+                <%= link_to (image_tag('trash-outline.svg')), 
+                t,
+                method: :delete,
+                data: { confirm: "Inti zgur trid tnehhija?" }
+                %>  
+        </li>
     <% end %>
 </ul>
 
-<%= link_to "Zid +", tasks_new_path %>
+<%= link_to (image_tag('add-circle-outline.svg')), tasks_new_path %>

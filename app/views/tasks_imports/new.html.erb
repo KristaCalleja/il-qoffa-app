@@ -1,0 +1,15 @@
+<h1>Upload new file</h1>
+
+<%= form_for @tasks_import do |f| %>
+  <% if @tasks_import.errors.any? %>
+    <%= pluralize(@tasks_import.errors.count, "error") %> prevented us from
+    importing your spreadsheet. Please update your spreadsheet and try agin.
+    <ul>
+      <% @tasks_import.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <%= f.file_field :file %>
+  <%= f.submit "Import File" %>
+<% end %>

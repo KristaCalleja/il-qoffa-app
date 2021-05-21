@@ -13,16 +13,23 @@ div{
     border: 1px gray dotted;
 }
 li{
-    border: 1px gray dotted;
+    border: 2px $gunmetal solid;
     width: 100%;
     padding: .7em 0;
     background: white;
     font-family: $slant-font;
-    li:hover{
+    &:hover{
         background: $gunmetal;
         color: $cultured;
+        & a{
+            color: $cultured;
+        }
+    }
+    & a {
+        font-family: $slant-font;
+        font-size: 18px;
     }
 }
-li a{
-        font-family: $slant-font;
-    }
+li::before{
+    content: url(reader-outline.svg);
+}

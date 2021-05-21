@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  get 'tasks_imports/new'
+  get 'tasks_imports/create'
+  get 'tasks_import/new'
+  get 'tasks_import/create'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
   # PAGES GETS
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+
+  resources :tasks_imports, only: [:new, :create]
 
 
   # READ ALL

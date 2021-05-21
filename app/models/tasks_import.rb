@@ -25,8 +25,8 @@ class TasksImport
   
     def load_imported_items
       spreadsheet = open_spreadsheet
-      header = spreadsheet.row(5)
-      (1..spreadsheet.last_row).map do |i|
+      header = spreadsheet.row(1)
+      (2..spreadsheet.last_row).map do |i|
         row = Hash[[header, spreadsheet.row(i)].transpose]
         task = Task.find_by_id(row["id"]) || Task.new
         task.attributes = row.to_hash

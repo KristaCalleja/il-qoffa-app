@@ -1,5 +1,6 @@
 *{
     font-family: $font-family;
+    background-color: $cultured;
 }
 img{
     width: 32px;
@@ -9,27 +10,19 @@ img{
     }
 }
 
-div{
-    border: 1px gray dotted;
-}
 li{
-    border: 2px $gunmetal solid;
     width: 100%;
-    padding: .7em 0;
-    background: white;
     font-family: $slant-font;
     &:hover{
-        background: $gunmetal;
-        color: $cultured;
-        & a{
-            color: $cultured;
+        background-color: $yellow-crayola;
+        & a, img{
+            background-color: $yellow-crayola;
+            text-decoration: none;
         }
     }
     & a {
         font-family: $slant-font;
-        font-size: 18px;
+        text-decoration: none;
+        font-size: 24px;
     }
-}
-li::before{
-    content: url(reader-outline.svg);
 }
